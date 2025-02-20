@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sec-1 .container{
+    width: 1200px;
+    height: 200px;
+    background-color: grey;
+    margin: 30px auto;
+    position: relative;
+}
+
+.container h1{
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700px;
+    color: black;
+    margin-bottom: 15px;
+}
+.navbar{
+    width: 1240px;
+    background-color: black;
+    position: absolute;
+    left: -20px;
+    border-top: 2px solid green;
+    position: relative;
+   
+}
+
+.container .navbar-nav{
+    margin-left: 30px;
+    list-style-type: none;
+    display: flex;
+    
+}
+
+
+
+
+.container .navbar-nav .nav-item{
+    padding: 0px 20px ;
+    margin: 20px 0px;
+}
+
+/* .navbar .nav-item::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 30px;
+    background: #0a0a23;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0 100%, 0 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;   
+}
+.navbar .nav-item:hover::before {
+    opacity: 1;
+} */
+
+
+.container .nav-link{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700px;
+    color: white;
+}
+.navbar::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    left: 1220px;
+}
+
+.navbar::before{
+    content:"";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #000 transparent transparent;
+    position: absolute;
+    bottom: -33%;
+}
+
+
+
+.sec-2 .container {
+    width: 1200px;
+    margin: auto;
+}
+
+.sec-2 .container .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row{
+    display: flex;
+}
+.col-8{
+    width: 785px;
+    /* width: 66.6666667%; */
+    height: 300px;
+    background-color: green;
+    margin-bottom: 20px;
+    position: relative;
+}
+.col-4{
+    width: 390px;
+    /* width: calc(100% / 3); */
+    height: 300px;
+    background-color: rgb(186, 129, 24);
+}
+
+.col-8 .col-4{
+    /* width: calc(100% / 2); */
+    height: 300px;
+}
+
+.right{
+    width: 370px;
+    background-color: black;
+    
+}
+ .left{
+    width: 415px;
+    background-color: red;
+}
+
+.arrow{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    position: absolute;
+    top: 30px;
+    right: 45%;
+    transform: rotate(45deg);
+}
+
+
+
+
+
